@@ -8,7 +8,6 @@ Program to multiply (3,3) matrix and print the result in matrix form
 void multiply(int x[3][3], int y[3][3])
 {
     int sum = 0;
-    static int list[3][3];
 
     for (int i = 0; i < 3; i++)
     {
@@ -20,7 +19,6 @@ void multiply(int x[3][3], int y[3][3])
                 sum += x[i][k] * y[k][j];
             }
             cout <<sum<< ",";
-            list[i][j] = sum;
         }
         cout<<endl;
     }
